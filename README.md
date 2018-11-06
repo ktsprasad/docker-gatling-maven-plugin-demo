@@ -1,17 +1,43 @@
-gatling-maven-plugin-demo
-=========================
+                                        ================================
+                                        docker-gatling-maven-plugin-demo
+                                        ================================
 
-Simple showcase of a maven project using the gatling-maven-plugin.
+** Project Setup **  
+
+- Check out a project from a remote host (clone - https://github.com/ktsprasad/docker-gatling-maven-plugin-demo.git) >> IntelliJ IDEA allows you to check out (in Git terms clone) an existing repository and create a new project based on the data you've downloaded.
+    
+1. From the main menu, choose VCS | Checkout from Version Control | Git, or, if no project is currently opened, choose Checkout from Version Control | Git on the Welcome screen.
+
+2. In the Clone Repository dialog, specify the URL of the remote repository you want to clone (you can click Test to make sure that connection to the remote can be established).
+
+3. In the Directory field, specify the path where the folder for your local Git repository will be created into which the remote repository will be cloned.
+
+4. Click Clone. If you want to create a IntelliJ IDEA project based on the sources you have cloned, click Yes in the confirmation dialog. Git root mapping will be automatically set to the project root directory.
+
+Or 
+
+Clone the master repo and open open the POM.xml file via intellij
+
+Steps,
+1. git clone https://github.com/ktsprasad/docker-gatling-maven-plugin-demo.git
+2. open the project via intellij using POM.xml file
+
+
+** How to run LoginSimulation **
+
+Simple showcase of a maven project using the docker-gatling-maven-plugin-demo
 
 To test it out, simply execute the following command:
 
-    $mvn gatling:test -Dgatling.simulationClass=computerdatabase.BasicSimulation
+    $mvn gatling:test -Dgatling.simulationClass=computerdatabase.LoginSimulation
 
 or simply:
 
     $mvn gatling:test
 
----
+-------------------------------------------
+draft - document in progress
+-------------------------------------------
 
 Gatling setup CI and Docker
 
